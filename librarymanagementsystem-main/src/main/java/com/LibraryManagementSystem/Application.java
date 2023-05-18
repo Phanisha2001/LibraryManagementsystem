@@ -56,7 +56,7 @@ public class Application {
 			book2.addPublishers(new Publisher("publisher3"));
 			bookService.createBook(book2);
 
-			var user = new User("admin", "admin", "admin@admin.in", passwordEncoder.encode("Temp123"),
+			var user = new User("admin", "admin", "admin@admin.com", passwordEncoder.encode("Temp123"),
 					Arrays.asList(new Role("ROLE_ADMIN")));
 			userRepository.save(user);
 
